@@ -9,6 +9,15 @@
     <link rel="stylesheet"
         href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css" />
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <!-- sweetalert2 -->
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+
     <!-- SWIPER CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
@@ -199,19 +208,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-1-1.jpg&hover=image/product-1-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-1-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-1-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-1-1.jpg&hover=image/product-1-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -225,7 +237,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-1-1.jpg&hover=image/product-1-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -239,7 +251,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -248,19 +261,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-2-1.jpg&hover=image/product-2-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-2-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-2-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-2-1.jpg&hover=image/product-2-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -274,7 +290,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-2-1.jpg&hover=image/product-2-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -288,7 +304,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -297,19 +314,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-3-1.jpg&hover=image/product-3-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-3-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-3-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-3-1.jpg&hover=image/product-3-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -323,7 +343,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-3-1.jpg&hover=image/product-3-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -337,7 +357,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -346,19 +367,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-4-1.jpg&hover=image/product-4-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-4-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-4-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-4-1.jpg&hover=image/product-4-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -372,7 +396,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-4-1.jpg&hover=image/product-4-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -386,7 +410,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -395,19 +420,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-5-1.jpg&hover=image/product-5-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-5-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-5-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-5-1.jpg&hover=image/product-5-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -421,7 +449,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-5-1.jpg&hover=image/product-5-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -435,7 +463,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -444,19 +473,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-6-1.jpg&hover=image/product-6-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-6-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-6-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-6-1.jpg&hover=image/product-6-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -470,7 +502,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-6-1.jpg&hover=image/product-6-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -484,7 +516,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -493,19 +526,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-7-1.jpg&hover=image/product-7-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-7-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-7-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-7-1.jpg&hover=image/product-7-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -519,7 +555,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-7-1.jpg&hover=image/product-7-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -533,7 +569,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -542,19 +579,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-8-1.jpg&hover=image/product-8-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-8-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-8-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-8-1.jpg&hover=image/product-8-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -566,7 +606,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-8-1.jpg&hover=image/product-8-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -580,7 +620,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -595,19 +636,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-9-1.jpg&hover=image/product-9-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-9-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-9-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-9-1.jpg&hover=image/product-9-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -621,7 +665,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-9-1.jpg&hover=image/product-9-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -635,7 +679,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -644,19 +689,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-10-1.jpg&hover=image/product-10-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-10-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-10-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-10-1.jpg&hover=image/product-10-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -670,7 +718,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-10-1.jpg&hover=image/product-10-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -684,7 +732,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -693,19 +742,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-11-1.jpg&hover=image/product-11-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-11-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-11-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-11-1.jpg&hover=image/product-11-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -719,7 +771,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-11-1.jpg&hover=image/product-11-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -733,7 +785,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -742,19 +795,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-4-1.jpg&hover=image/product-4-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-4-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-4-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-4-1.jpg&hover=image/product-4-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -768,7 +824,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-4-1.jpg&hover=image/product-4-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -782,7 +838,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -791,19 +848,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-5-1.jpg&hover=image/product-5-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-5-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-5-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-5-1.jpg&hover=image/product-5-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -817,7 +877,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-5-1.jpg&hover=image/product-5-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -831,7 +891,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -840,19 +901,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-6-1.jpg&hover=image/product-6-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-6-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-6-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-6-1.jpg&hover=image/product-6-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -866,7 +930,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-6-1.jpg&hover=image/product-6-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -880,7 +944,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -889,19 +954,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-7-1.jpg&hover=image/product-7-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-7-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-7-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-7-1.jpg&hover=image/product-7-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -915,7 +983,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-7-1.jpg&hover=image/product-7-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -929,7 +997,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -938,19 +1007,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-8-1.jpg&hover=image/product-8-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-8-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-8-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-8-1.jpg&hover=image/product-8-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -962,7 +1034,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-8-1.jpg&hover=image/product-8-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -976,7 +1048,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -991,19 +1064,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-1-1.jpg&hover=image/product-1-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-1-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-1-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-1-1.jpg&hover=image/product-1-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -1017,7 +1093,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-1-1.jpg&hover=image/product-1-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -1031,7 +1107,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -1040,19 +1117,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-12-1.jpg&hover=image/product-12-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-12-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-12-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-12-1.jpg&hover=image/product-12-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -1066,7 +1146,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-12-1.jpg&hover=image/product-12-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -1080,7 +1160,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -1089,19 +1170,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-3-1.jpg&hover=image/product-3-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-3-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-3-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-3-1.jpg&hover=image/product-3-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -1115,7 +1199,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-3-1.jpg&hover=image/product-3-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -1129,7 +1213,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -1138,19 +1223,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-13-1.jpg&hover=image/product-13-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-13-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-13-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-13-1.jpg&hover=image/product-13-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -1164,7 +1252,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-13-1.jpg&hover=image/product-13-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -1178,7 +1266,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -1187,19 +1276,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-10-1.jpg&hover=image/product-10-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-10-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-10-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-10-1.jpg&hover=image/product-10-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -1213,7 +1305,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-10-1.jpg&hover=image/product-10-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -1227,7 +1319,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -1236,19 +1329,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-6-1.jpg&hover=image/product-6-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-6-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-6-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-6-1.jpg&hover=image/product-6-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -1262,7 +1358,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-6-1.jpg&hover=image/product-6-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -1276,7 +1372,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -1285,19 +1382,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-9-1.jpg&hover=image/product-9-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-9-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-9-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-9-1.jpg&hover=image/product-9-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -1311,7 +1411,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-9-1.jpg&hover=image/product-9-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -1325,7 +1425,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -1334,19 +1435,22 @@
                         <div class="product-item">
                             <div class="product-banner">
 
-                                <a href="details.html" class="product-image">
+                                <a href="details.html?src=image/product-8-1.jpg&hover=image/product-8-2.jpg"
+                                    class="product-image">
                                     <img src="image/product-8-1.jpg" alt="" class="product-img default">
                                     <img src="image/product-8-2.jpg" alt="" class="product-img hover">
                                 </a>
 
                                 <div class="product-actions">
 
-                                    <a href="#" class="action-btn" aria-label="Quick View">
+                                    <a href="details.html?src=image/product-8-1.jpg&hover=image/product-8-2.jpg"
+                                        class="action-btn" aria-label="Quick View">
                                         <i class="fi fi-rs-eye"></i>
                                     </a>
 
-                                    <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                        <i class="fi fi-rs-heart"></i>
+                                    <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                        onclick="changeHeartColor(event)">
+                                        <i class="fa-solid fa-heart"></i>
                                     </a>
 
                                     <a href="#" class="action-btn" aria-label="Compare">
@@ -1358,7 +1462,7 @@
 
                             <div class="product-content">
                                 <span class="product-category">Clothing</span>
-                                <a href="details.html">
+                                <a href="details.html?src=image/product-8-1.jpg&hover=image/product-8-2.jpg">
                                     <h3 class="product-title">Colorful Pattern Shirts</h3>
                                 </a>
                                 <div class="product-rating">
@@ -1372,7 +1476,8 @@
                                     <span class="new-price">$238.85</span>
                                     <span class="old-price">$245.8</span>
                                 </div>
-                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                                <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                    onclick="changeCart(event)">
                                     <i class="fi fi-rs-shopping-bag-add"></i>
                                 </a>
                             </div>
@@ -1479,19 +1584,22 @@
                     <div class="product-item swiper-slide">
                         <div class="product-banner">
 
-                            <a href="details.html" class="product-image">
+                            <a href="details.html?src=image/product-1-1.jpg&hover=image/product-1-2.jpg"
+                                class="product-image">
                                 <img src="image/product-1-1.jpg" alt="" class="product-img default">
                                 <img src="image/product-1-2.jpg" alt="" class="product-img hover">
                             </a>
 
                             <div class="product-actions">
 
-                                <a href="#" class="action-btn" aria-label="Quick View">
+                                <a href="details.html?src=image/product-1-1.jpg&hover=image/product-1-2.jpg"
+                                    class="action-btn" aria-label="Quick View">
                                     <i class="fi fi-rs-eye"></i>
                                 </a>
 
-                                <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                    <i class="fi fi-rs-heart"></i>
+                                <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                    onclick="changeHeartColor(event)">
+                                    <i class="fa-solid fa-heart"></i>
                                 </a>
 
                                 <a href="#" class="action-btn" aria-label="Compare">
@@ -1505,7 +1613,7 @@
 
                         <div class="product-content">
                             <span class="product-category">Clothing</span>
-                            <a href="details.html">
+                            <a href="onclick=" changeCart(event)"">
                                 <h3 class="product-title">Colorful Pattern Shirts</h3>
                             </a>
                             <div class="product-rating">
@@ -1519,7 +1627,8 @@
                                 <span class="new-price">$238.85</span>
                                 <span class="old-price">$245.8</span>
                             </div>
-                            <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                            <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                onclick="changeCart(event)">
                                 <i class="fi fi-rs-shopping-bag-add"></i>
                             </a>
                         </div>
@@ -1528,19 +1637,22 @@
                     <div class="product-item swiper-slide">
                         <div class="product-banner">
 
-                            <a href="details.html" class="product-image">
+                            <a href="details.html?src=image/product-2-1.jpg&hover=image/product-2-2.jpg"
+                                class="product-image">
                                 <img src="image/product-2-1.jpg" alt="" class="product-img default">
                                 <img src="image/product-2-2.jpg" alt="" class="product-img hover">
                             </a>
 
                             <div class="product-actions">
 
-                                <a href="#" class="action-btn" aria-label="Quick View">
+                                <a href="details.html?src=image/product-2-1.jpg&hover=image/product-2-2.jpg"
+                                    class="action-btn" aria-label="Quick View">
                                     <i class="fi fi-rs-eye"></i>
                                 </a>
 
-                                <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                    <i class="fi fi-rs-heart"></i>
+                                <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                    onclick="changeHeartColor(event)">
+                                    <i class="fa-solid fa-heart"></i>
                                 </a>
 
                                 <a href="#" class="action-btn" aria-label="Compare">
@@ -1554,7 +1666,7 @@
 
                         <div class="product-content">
                             <span class="product-category">Clothing</span>
-                            <a href="details.html">
+                            <a href="details.html?src=image/product-2-1.jpg&hover=image/product-2-2.jpg">
                                 <h3 class="product-title">Colorful Pattern Shirts</h3>
                             </a>
                             <div class="product-rating">
@@ -1568,7 +1680,8 @@
                                 <span class="new-price">$238.85</span>
                                 <span class="old-price">$245.8</span>
                             </div>
-                            <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                            <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                onclick="changeCart(event)">
                                 <i class="fi fi-rs-shopping-bag-add"></i>
                             </a>
                         </div>
@@ -1577,19 +1690,22 @@
                     <div class="product-item swiper-slide">
                         <div class="product-banner">
 
-                            <a href="details.html" class="product-image">
+                            <a href="details.html?src=image/product-3-1.jpg&hover=image/product-3-2.jpg"
+                                class="product-image">
                                 <img src="image/product-3-1.jpg" alt="" class="product-img default">
                                 <img src="image/product-3-2.jpg" alt="" class="product-img hover">
                             </a>
 
                             <div class="product-actions">
 
-                                <a href="#" class="action-btn" aria-label="Quick View">
+                                <a href="details.html?src=image/product-3-1.jpg&hover=image/product-3-2.jpg"
+                                    class="action-btn" aria-label="Quick View">
                                     <i class="fi fi-rs-eye"></i>
                                 </a>
 
-                                <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                    <i class="fi fi-rs-heart"></i>
+                                <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                    onclick="changeHeartColor(event)">
+                                    <i class="fa-solid fa-heart"></i>
                                 </a>
 
                                 <a href="#" class="action-btn" aria-label="Compare">
@@ -1603,7 +1719,7 @@
 
                         <div class="product-content">
                             <span class="product-category">Clothing</span>
-                            <a href="details.html">
+                            <a href="details.html?src=image/product-3-1.jpg&hover=image/product-3-2.jpg">
                                 <h3 class="product-title">Colorful Pattern Shirts</h3>
                             </a>
                             <div class="product-rating">
@@ -1617,7 +1733,8 @@
                                 <span class="new-price">$238.85</span>
                                 <span class="old-price">$245.8</span>
                             </div>
-                            <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                            <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                onclick="changeCart(event)">
                                 <i class="fi fi-rs-shopping-bag-add"></i>
                             </a>
                         </div>
@@ -1626,19 +1743,22 @@
                     <div class="product-item swiper-slide">
                         <div class="product-banner">
 
-                            <a href="details.html" class="product-image">
+                            <a href="details.html?src=image/product-4-1.jpg&hover=image/product-4-2.jpg"
+                                class="product-image">
                                 <img src="image/product-4-1.jpg" alt="" class="product-img default">
                                 <img src="image/product-4-2.jpg" alt="" class="product-img hover">
                             </a>
 
                             <div class="product-actions">
 
-                                <a href="#" class="action-btn" aria-label="Quick View">
+                                <a href="details.html?src=image/product-4-1.jpg&hover=image/product-4-2.jpg"
+                                    class="action-btn" aria-label="Quick View">
                                     <i class="fi fi-rs-eye"></i>
                                 </a>
 
-                                <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                    <i class="fi fi-rs-heart"></i>
+                                <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                    onclick="changeHeartColor(event)">
+                                    <i class="fa-solid fa-heart"></i>
                                 </a>
 
                                 <a href="#" class="action-btn" aria-label="Compare">
@@ -1652,7 +1772,7 @@
 
                         <div class="product-content">
                             <span class="product-category">Clothing</span>
-                            <a href="details.html">
+                            <a href="details.html?src=image/product-4-1.jpg&hover=image/product-4-2.jpg">
                                 <h3 class="product-title">Colorful Pattern Shirts</h3>
                             </a>
                             <div class="product-rating">
@@ -1666,7 +1786,8 @@
                                 <span class="new-price">$238.85</span>
                                 <span class="old-price">$245.8</span>
                             </div>
-                            <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                            <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                onclick="changeCart(event)">
                                 <i class="fi fi-rs-shopping-bag-add"></i>
                             </a>
                         </div>
@@ -1675,19 +1796,22 @@
                     <div class="product-item swiper-slide">
                         <div class="product-banner">
 
-                            <a href="details.html" class="product-image">
+                            <a href="details.html?src=image/product-5-1.jpg&hover=image/product-5-2.jpg"
+                                class="product-image">
                                 <img src="image/product-5-1.jpg" alt="" class="product-img default">
                                 <img src="image/product-5-2.jpg" alt="" class="product-img hover">
                             </a>
 
                             <div class="product-actions">
 
-                                <a href="#" class="action-btn" aria-label="Quick View">
+                                <a href="details.html?src=image/product-5-1.jpg&hover=image/product-5-2.jpg"
+                                    class="action-btn" aria-label="Quick View">
                                     <i class="fi fi-rs-eye"></i>
                                 </a>
 
-                                <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                    <i class="fi fi-rs-heart"></i>
+                                <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                    onclick="changeHeartColor(event)">
+                                    <i class="fa-solid fa-heart"></i>
                                 </a>
 
                                 <a href="#" class="action-btn" aria-label="Compare">
@@ -1701,7 +1825,7 @@
 
                         <div class="product-content">
                             <span class="product-category">Clothing</span>
-                            <a href="details.html">
+                            <a href="details.html?src=image/product-5-1.jpg&hover=image/product-5-2.jpg">
                                 <h3 class="product-title">Colorful Pattern Shirts</h3>
                             </a>
                             <div class="product-rating">
@@ -1715,7 +1839,8 @@
                                 <span class="new-price">$238.85</span>
                                 <span class="old-price">$245.8</span>
                             </div>
-                            <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                            <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                onclick="changeCart(event)">
                                 <i class="fi fi-rs-shopping-bag-add"></i>
                             </a>
                         </div>
@@ -1724,19 +1849,22 @@
                     <div class="product-item swiper-slide">
                         <div class="product-banner">
 
-                            <a href="details.html" class="product-image">
+                            <a href="details.html?src=image/product-6-1.jpg&hover=image/product-6-2.jpg"
+                                class="product-image">
                                 <img src="image/product-6-1.jpg" alt="" class="product-img default">
                                 <img src="image/product-6-2.jpg" alt="" class="product-img hover">
                             </a>
 
                             <div class="product-actions">
 
-                                <a href="#" class="action-btn" aria-label="Quick View">
+                                <a href="details.html?src=image/product-6-1.jpg&hover=image/product-6-2.jpg"
+                                    class="action-btn" aria-label="Quick View">
                                     <i class="fi fi-rs-eye"></i>
                                 </a>
 
-                                <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                    <i class="fi fi-rs-heart"></i>
+                                <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                    onclick="changeHeartColor(event)">
+                                    <i class="fa-solid fa-heart"></i>
                                 </a>
 
                                 <a href="#" class="action-btn" aria-label="Compare">
@@ -1750,7 +1878,7 @@
 
                         <div class="product-content">
                             <span class="product-category">Clothing</span>
-                            <a href="details.html">
+                            <a href="details.html?src=image/product-6-1.jpg&hover=image/product-6-2.jpg">
                                 <h3 class="product-title">Colorful Pattern Shirts</h3>
                             </a>
                             <div class="product-rating">
@@ -1764,7 +1892,8 @@
                                 <span class="new-price">$238.85</span>
                                 <span class="old-price">$245.8</span>
                             </div>
-                            <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                            <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                onclick="changeCart(event)">
                                 <i class="fi fi-rs-shopping-bag-add"></i>
                             </a>
                         </div>
@@ -1773,19 +1902,22 @@
                     <div class="product-item swiper-slide">
                         <div class="product-banner">
 
-                            <a href="details.html" class="product-image">
+                            <a href="details.html?src=image/product-7-1.jpg&hover=image/product-7-2.jpg"
+                                class="product-image">
                                 <img src="image/product-7-1.jpg" alt="" class="product-img default">
                                 <img src="image/product-7-2.jpg" alt="" class="product-img hover">
                             </a>
 
                             <div class="product-actions">
 
-                                <a href="#" class="action-btn" aria-label="Quick View">
+                                <a href="details.html?src=image/product-7-1.jpg&hover=image/product-7-2.jpg"
+                                    class="action-btn" aria-label="Quick View">
                                     <i class="fi fi-rs-eye"></i>
                                 </a>
 
-                                <a href="#" class="action-btn" aria-label="Add to wishlist">
-                                    <i class="fi fi-rs-heart"></i>
+                                <a href="#" class="action-btn" aria-label="Add to wishlist"
+                                    onclick="changeHeartColor(event)">
+                                    <i class="fa-solid fa-heart"></i>
                                 </a>
 
                                 <a href="#" class="action-btn" aria-label="Compare">
@@ -1799,7 +1931,7 @@
 
                         <div class="product-content">
                             <span class="product-category">Clothing</span>
-                            <a href="details.html">
+                            <a href="details.html?src=image/product-7-1.jpg&hover=image/product-7-2.jpg">
                                 <h3 class="product-title">Colorful Pattern Shirts</h3>
                             </a>
                             <div class="product-rating">
@@ -1813,7 +1945,8 @@
                                 <span class="new-price">$238.85</span>
                                 <span class="old-price">$245.8</span>
                             </div>
-                            <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+                            <a href="#" class="action-btn cart-btn" aria-label="Add To Cart"
+                                onclick="changeCart(event)">
                                 <i class="fi fi-rs-shopping-bag-add"></i>
                             </a>
                         </div>
@@ -1838,12 +1971,12 @@
                     <h3 class="section-title">Hot Releases</h3>
 
                     <div class="showcase-item">
-                        <a href="details.html" class="showcase-img-box">
+                        <a href="details.html?src=image/showcase-img-1.jpg&hover=image" class="showcase-img-box">
                             <img src="image/showcase-img-1.jpg" alt="" class="showcase-img">
                         </a>
 
                         <div class="showcase-content">
-                            <a href="details.html">
+                            <a href="details.html?src=image/showcase-img-1.jpg&hover=image">
                                 <h4 class="showcase-title">Floral Print Casual Cotton Dress </h4>
                             </a>
 
@@ -1855,12 +1988,12 @@
                     </div>
 
                     <div class="showcase-item">
-                        <a href="details.html" class="showcase-img-box">
+                        <a href="details.html?src=image/showcase-img-2.jpg&hover=image" class="showcase-img-box">
                             <img src="image/showcase-img-2.jpg" alt="" class="showcase-img">
                         </a>
 
                         <div class="showcase-content">
-                            <a href="details.html">
+                            <a href="details.html?src=image/showcase-img-2.jpg&hover=image">
                                 <h4 class="showcase-title">Ruffled Solid Long Sleeve Blouse</h4>
                             </a>
 
@@ -1872,12 +2005,12 @@
                     </div>
 
                     <div class="showcase-item">
-                        <a href="details.html" class="showcase-img-box">
+                        <a href="details.html?src=image/showcase-img-3.jpg&hover=image" class="showcase-img-box">
                             <img src="image/showcase-img-3.jpg" alt="" class="showcase-img">
                         </a>
 
                         <div class="showcase-content">
-                            <a href="details.html">
+                            <a href="details.html?src=image/showcase-img-3.jpg&hover=image">
                                 <h4 class="showcase-title">Multi-color Print V-neck T-Shirt</h4>
                             </a>
 
@@ -1895,12 +2028,12 @@
                     <h3 class="section-title">Deals & Outlet</h3>
 
                     <div class="showcase-item">
-                        <a href="details.html" class="showcase-img-box">
+                        <a href="details.html?src=image/showcase-img-4.jpg&hover=image" class="showcase-img-box">
                             <img src="image/showcase-img-4.jpg" alt="" class="showcase-img">
                         </a>
 
                         <div class="showcase-content">
-                            <a href="details.html">
+                            <a href="details.html?src=image/showcase-img-4.jpg&hover=image">
                                 <h4 class="showcase-title">Fish Print Patched T-Shirt</h4>
                             </a>
 
@@ -1912,12 +2045,12 @@
                     </div>
 
                     <div class="showcase-item">
-                        <a href="details.html" class="showcase-img-box">
+                        <a href="details.html?src=image/showcase-img-5.jpg&hover=image" class="showcase-img-box">
                             <img src="image/showcase-img-5.jpg" alt="" class="showcase-img">
                         </a>
 
                         <div class="showcase-content">
-                            <a href="details.html">
+                            <a href="details.html?src=image/showcase-img-5.jpg&hover=image">
                                 <h4 class="showcase-title">Vintage Floral Print Dress</h4>
                             </a>
 
@@ -1929,12 +2062,12 @@
                     </div>
 
                     <div class="showcase-item">
-                        <a href="details.html" class="showcase-img-box">
+                        <a href="details.html?src=image/showcase-img-6.jpg&hover=image" class="showcase-img-box">
                             <img src="image/showcase-img-6.jpg" alt="" class="showcase-img">
                         </a>
 
                         <div class="showcase-content">
-                            <a href="details.html">
+                            <a href="details.html?src=image/showcase-img-6.jpg&hover=image">
                                 <h4 class="showcase-title">Multi-color stripe Circle T-Shirt</h4>
                             </a>
 
@@ -1952,12 +2085,12 @@
                     <h3 class="section-title">Top Selling</h3>
 
                     <div class="showcase-item">
-                        <a href="details.html" class="showcase-img-box">
+                        <a href="details.html?src=image/showcase-img-7.jpg&hover=image" class="showcase-img-box">
                             <img src="image/showcase-img-7.jpg" alt="" class="showcase-img">
                         </a>
 
                         <div class="showcase-content">
-                            <a href="details.html">
+                            <a href="details.html?src=image/showcase-img-7.jpg&hover=image">
                                 <h4 class="showcase-title">Geometric Printed Long Sleeve Blouse</h4>
                             </a>
 
@@ -1969,12 +2102,12 @@
                     </div>
 
                     <div class="showcase-item">
-                        <a href="details.html" class="showcase-img-box">
+                        <a href="details.html?src=image/showcase-img-8.jpg&hover=image" class="showcase-img-box">
                             <img src="image/showcase-img-8.jpg" alt="" class="showcase-img">
                         </a>
 
                         <div class="showcase-content">
-                            <a href="details.html">
+                            <a href="details.html?src=image/showcase-img-8.jpg&hover=image">
                                 <h4 class="showcase-title">Print Patchwork Maxi Dress</h4>
                             </a>
 
@@ -1986,12 +2119,12 @@
                     </div>
 
                     <div class="showcase-item">
-                        <a href="details.html" class="showcase-img-box">
+                        <a href="details.html?src=image/showcase-img-9.jpg&hover=image" class="showcase-img-box">
                             <img src="image/showcase-img-9.jpg" alt="" class="showcase-img">
                         </a>
 
                         <div class="showcase-content">
-                            <a href="details.html">
+                            <a href="details.html?src=image/showcase-img-9.jpg&hover=image">
                                 <h4 class="showcase-title">Daisy Floral Straps Jumpsuit</h4>
                             </a>
 
@@ -2009,12 +2142,12 @@
                     <h3 class="section-title">Trendy</h3>
 
                     <div class="showcase-item">
-                        <a href="details.html" class="showcase-img-box">
+                        <a href="details.html?src=image/showcase-img-1.jpg&hover=image" class="showcase-img-box">
                             <img src="image/showcase-img-1.jpg" alt="" class="showcase-img">
                         </a>
 
                         <div class="showcase-content">
-                            <a href="details.html">
+                            <a href="details.html?src=image/showcase-img-1.jpg&hover=image">
                                 <h4 class="showcase-title">Geometric Printed Long Sleeve Blouse</h4>
                             </a>
 
@@ -2026,12 +2159,12 @@
                     </div>
 
                     <div class="showcase-item">
-                        <a href="details.html" class="showcase-img-box">
+                        <a href="details.html?src=image/showcase-img-2.jpg&hover=image" class="showcase-img-box">
                             <img src="image/showcase-img-2.jpg" alt="" class="showcase-img">
                         </a>
 
                         <div class="showcase-content">
-                            <a href="details.html">
+                            <a href="details.html?src=image/showcase-img-2.jpg&hover=image">
                                 <h4 class="showcase-title">Print Patchwork Maxi Dress</h4>
                             </a>
 
@@ -2043,12 +2176,12 @@
                     </div>
 
                     <div class="showcase-item">
-                        <a href="details.html" class="showcase-img-box">
+                        <a href="details.html?src=image/showcase-img-3.jpg&hover=image" class="showcase-img-box">
                             <img src="image/showcase-img-3.jpg" alt="" class="showcase-img">
                         </a>
 
                         <div class="showcase-content">
-                            <a href="details.html">
+                            <a href="details.html?src=image/showcase-img-3.jpg&hover=image">
                                 <h4 class="showcase-title">Daisy Floral Straps Jumpsuit</h4>
                             </a>
 
@@ -2067,114 +2200,11 @@
         <!-- END SHOWCASE -->
 
         <!-- START NEWSLETTER -->
-        <section class="newsletter section">
-            <div class="newsletter-container container grid">
-                <h3 class="newsletter-title flex">
-                    <img src="image/icon-email.svg" alt="" class="newsletter-icon">
-                    Sign Up To Newsletter
-                </h3>
-
-                <p class="newsletter-description">...and receive $25 coupon for first shopping</p>
-
-                <form action="" class="newsletter-form">
-                    <input type="text" placeholder="Enter Your email" class="newsletter-input">
-                    <button type="submit" class="newsletter-btn">Subscribe</button>
-                </form>
-            </div>
-        </section>
         <!-- END NEWSLETTER -->
     </main>
     <!-- END MAIN -->
 
     <!-- START FOOTER -->
-    <footer class="footer container">
-        <div class="footer-container grid">
-
-            <div class="footer-content">
-                <a href="index.html" class="footer-logo">
-                    <img src="image/logo.svg" alt="" class="footer-logo-img">
-                </a>
-                <h4 class="footer-subtitle">Contact</h4>
-
-                <p class="footer-description">
-                    <span>Address:</span> Street Omer Almoktar, Alsamer, Gaza, Palestine
-                </p>
-
-                <p class="footer-description">
-                    <span>Phone:</span> +972 59-786-7603 / +972 59-786-7603
-                </p>
-
-                <p class="footer-description">
-                    <span>Hours:</span> 10:00 - 18:00, Mon - Sat
-                </p>
-
-                <div class="footer-social">
-                    <h4 class="footer-subtitle">Follow Me</h4>
-
-                    <div class="footer-social-links flex">
-
-                        <a href="">
-                            <img src="image/icon-facebook.svg" alt="" class="footer-social-icon">
-                        </a>
-
-                        <a href="">
-                            <img src="image/icon-twitter.svg" alt="" class="footer-social-icon">
-                        </a>
-
-                        <a href="">
-                            <img src="image/icon-instagram.svg" alt="" class="footer-social-icon">
-                        </a>
-
-                        <a href="">
-                            <img src="image/icon-pinterest.svg" alt="" class="footer-social-icon">
-                        </a>
-
-                        <a href="">
-                            <img src="image/icon-github.svg" alt="" class="footer-social-icon">
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-content">
-                <h3 class="footer-title">Address</h3>
-
-                <ul class="footer-links">
-                    <li><a href="" class="footer-link">About Us</a></li>
-                    <li><a href="" class="footer-link">Delivery Information</a></li>
-                    <li><a href="" class="footer-link">Privacy Policy</a></li>
-                    <li><a href="" class="footer-link">Terms & Conditions</a></li>
-                    <li><a href="" class="footer-link">Contact Us</a></li>
-                    <li><a href="" class="footer-link">Support Center</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-content">
-                <h3 class="footer-title">My Account</h3>
-
-                <ul class="footer-links">
-                    <li><a href="" class="footer-link">Sign In</a></li>
-                    <li><a href="" class="footer-link">View Cart </a></li>
-                    <li><a href="" class="footer-link">My Wishlist</a></li>
-                    <li><a href="" class="footer-link">Track My Order</a></li>
-                    <li><a href="" class="footer-link">Help</a></li>
-                    <li><a href="" class="footer-link">Order</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-content">
-                <h3 class="footer-title">Secured Payment Gateways</h3>
-
-                <img src="image/payment-method.png" alt="" class="payment-img">
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p class="copyright">&copy; 2023 Mohamed Salem. All rights reserved</p>
-            <span class="designer">Designed By Mohamed Salem</span>
-        </div>
-    </footer>
     <!-- End FOOTER -->
 
     <!-- SWIPER JS -->

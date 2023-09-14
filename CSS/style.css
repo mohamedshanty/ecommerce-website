@@ -526,6 +526,14 @@ table {
   position: relative;
 }
 
+.action-btn {
+  color: #6b6b6b;
+}
+
+.action-btn:hover {
+  color: var(--body-color);
+}
+
 .action-btn::before,
 .action-btn::after {
   position: absolute;
