@@ -9,6 +9,14 @@
     <link rel="stylesheet"
         href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css" />
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <!-- sweetalert2 -->
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
     <!-- SWIPER CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
@@ -146,9 +154,9 @@
 
                         <td><span class="table-stock">In Stock</span></td>
 
-                        <td><a href="" class="btn btn-sm">Add To Cart</a></td>
+                        <td><a href="" class="btn btn-sm" onclick="changeCart(event)">Add To Cart</a></td>
 
-                        <td><i class="fi fi-rs-trash table-trash"></i></td>
+                        <td><i class="fi fi-rs-trash table-trash" onclick="removeRow(this)"></i></td>
                     </tr>
 
                     <tr>
@@ -163,9 +171,9 @@
 
                         <td><span class="table-stock">In Stock</span></td>
 
-                        <td><a href="" class="btn btn-sm">Add To Cart</a></td>
+                        <td><a href="" class="btn btn-sm" onclick="changeCart(event)">Add To Cart</a></td>
 
-                        <td><i class="fi fi-rs-trash table-trash"></i></td>
+                        <td><i class="fi fi-rs-trash table-trash" onclick="removeRow(this)"></i></td>
                     </tr>
 
                     <tr>
@@ -180,9 +188,9 @@
 
                         <td><span class="table-stock">In Stock</span></td>
 
-                        <td><a href="" class="btn btn-sm">Add To Cart</a></td>
+                        <td><a href="" class="btn btn-sm" onclick="changeCart(event)">Add To Cart</a></td>
 
-                        <td><i class="fi fi-rs-trash table-trash"></i></td>
+                        <td><i class="fi fi-rs-trash table-trash" onclick="removeRow(this)"></i></td>
                     </tr>
                 </table>
             </div>

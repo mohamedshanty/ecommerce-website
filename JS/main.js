@@ -311,7 +311,6 @@ footerContent1.appendChild(footerSocial);
 footerSocial.appendChild(footerSubtitle2);
 footerSocial.appendChild(socialLinks);
 
-// الجزء الثاني من المحتوى
 const footerContent2 = document.createElement("div");
 footerContent2.classList.add("footer-content");
 
@@ -413,102 +412,102 @@ footer.appendChild(footerBottom);
 document.body.appendChild(footer);
 /* END FOOTER*/
 
-// NEW
-// Get references to pagination elements
-const prevPageBtn = document.getElementById("prevPage");
-const nextPageBtn = document.getElementById("nextPage");
-const paginationLinks = document.querySelector(".pagination");
+/* START pagination */
+document.addEventListener("DOMContentLoaded", function () {
+  const prevPageBtn = document.getElementById("prevPage");
+  const nextPageBtn = document.getElementById("nextPage");
+  const paginationLinks = document.querySelector(".pagination");
+  const productContainer = document.querySelector(".products-container");
+  const productItems = document.querySelectorAll(".product-item");
+  const itemsPerPage = 12;
+  let currentPage = 1;
 
-const productContainer = document.querySelector(".products-container");
-const productItems = document.querySelectorAll(".product-item");
-const itemsPerPage = 12; // Number of items to display per page
-let currentPage = 1; // Current page
+  function updatePagination() {
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = currentPage * itemsPerPage;
 
-// Function to update the visibility of product items based on the current page
-function updatePagination() {
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = currentPage * itemsPerPage;
+    productItems.forEach((item, index) => {
+      if (index >= startIndex && index < endIndex) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
 
-  productItems.forEach((item, index) => {
-    if (index >= startIndex && index < endIndex) {
-      item.style.display = "block";
-    } else {
-      item.style.display = "none";
-    }
-  });
+    generatePaginationLinks();
 
-  // Update pagination links
-  generatePaginationLinks();
-
-  // Add "active" class to the current page link
-  const pageLinks = paginationLinks.querySelectorAll(".pagination-link");
-  pageLinks.forEach((link, index) => {
-    if (index === currentPage) {
-      link.classList.add("active");
-    } else {
-      link.classList.remove("active");
-    }
-  });
-}
-
-// Function to generate pagination links based on the number of pages
-function generatePaginationLinks() {
-  const totalItems = productItems.length;
-  const totalPages = Math.ceil(totalItems / itemsPerPage);
-
-  // Clear existing pagination links
-  paginationLinks.innerHTML = "";
-
-  // Create and append previous page arrow
-  const prevPageLink = document.createElement("li");
-  const prevPageAnchor = document.createElement("a");
-  prevPageAnchor.href = "#";
-  prevPageAnchor.classList.add("pagination-link", "icon-left");
-  prevPageAnchor.innerHTML = '<i class="fi-rs-angle-double-small-left"></i>';
-  prevPageLink.appendChild(prevPageAnchor);
-  paginationLinks.appendChild(prevPageLink);
-
-  // Create and append pagination links
-  for (let i = 1; i <= totalPages; i++) {
-    const pageLink = document.createElement("li");
-    const pageAnchor = document.createElement("a");
-    pageAnchor.href = "#";
-    pageAnchor.classList.add("pagination-link");
-    pageAnchor.textContent = i;
-    pageLink.appendChild(pageAnchor);
-    paginationLinks.appendChild(pageLink);
-
-    // Add click event listener to each pagination link
-    pageAnchor.addEventListener("click", () => {
-      currentPage = i;
-      updatePagination();
+    const pageLinks = paginationLinks.querySelectorAll(".pagination-link");
+    pageLinks.forEach((link, index) => {
+      if (index === currentPage) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
     });
   }
 
-  // Create and append next page arrow
-  const nextPageLink = document.createElement("li");
-  const nextPageAnchor = document.createElement("a");
-  nextPageAnchor.href = "#";
-  nextPageAnchor.classList.add("pagination-link", "icon-right");
-  nextPageAnchor.innerHTML = '<i class="fi-rs-angle-double-small-right"></i>';
-  nextPageLink.appendChild(nextPageAnchor);
-  paginationLinks.appendChild(nextPageLink);
+  function generatePaginationLinks() {
+    const totalItems = productItems.length;
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
 
-  // Add click event listeners to previous and next page arrows
-  prevPageAnchor.addEventListener("click", () => {
-    if (currentPage > 1) {
-      currentPage--;
-      updatePagination();
-    }
-  });
+    paginationLinks.innerHTML = "";
 
-  nextPageAnchor.addEventListener("click", () => {
-    if (currentPage < totalPages) {
-      currentPage++;
-      updatePagination();
+    const prevPageLink = document.createElement("li");
+    const prevPageAnchor = document.createElement("a");
+    prevPageAnchor.href = "#";
+    prevPageAnchor.classList.add("pagination-link", "icon-left");
+    prevPageAnchor.innerHTML = '<i class="fi-rs-angle-double-small-left"></i>';
+    prevPageLink.appendChild(prevPageAnchor);
+    paginationLinks.appendChild(prevPageLink);
+
+    for (let i = 1; i <= totalPages; i++) {
+      const pageLink = document.createElement("li");
+      const pageAnchor = document.createElement("a");
+      pageAnchor.href = "#";
+      pageAnchor.classList.add("pagination-link");
+      pageAnchor.textContent = i;
+      pageLink.appendChild(pageAnchor);
+      paginationLinks.appendChild(pageLink);
+
+      pageAnchor.addEventListener("click", () => {
+        currentPage = i;
+        updatePagination();
+      });
     }
-  });
+
+    const nextPageLink = document.createElement("li");
+    const nextPageAnchor = document.createElement("a");
+    nextPageAnchor.href = "#";
+    nextPageAnchor.classList.add("pagination-link", "icon-right");
+    nextPageAnchor.innerHTML = '<i class="fi-rs-angle-double-small-right"></i>';
+    nextPageLink.appendChild(nextPageAnchor);
+    paginationLinks.appendChild(nextPageLink);
+
+    prevPageAnchor.addEventListener("click", () => {
+      if (currentPage > 1) {
+        currentPage--;
+        updatePagination();
+      }
+    });
+
+    nextPageAnchor.addEventListener("click", () => {
+      if (currentPage < totalPages) {
+        currentPage++;
+        updatePagination();
+      }
+    });
+  }
+
+  if (paginationLinks) {
+    updatePagination();
+  }
+});
+
+/* END pagination */
+
+/* START Remove Row */
+function removeRow(iconElement) {
+  var row = iconElement.closest("tr");
+  row.remove();
 }
-
-// Initialize pagination
-updatePagination();
+/* END Remove Row */
