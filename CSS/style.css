@@ -1,5 +1,5 @@
 /* Google Font */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Spartan:wght@400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Spartan:wght@400;500;600;700&display=swap"); */
 
 /* Variables CSS */
 :root {
@@ -293,6 +293,10 @@ table {
 .nav-menu-top,
 .nav-toggle {
   display: none;
+}
+
+.nav-toggle img {
+  cursor: pointer;
 }
 
 /* End HEADER & NAV */
@@ -1689,6 +1693,7 @@ table {
   .nav-close {
     font-size: var(--h2-font-size);
     line-height: 1rem;
+    cursor: pointer;
   }
 
   .header-action-btn img {
